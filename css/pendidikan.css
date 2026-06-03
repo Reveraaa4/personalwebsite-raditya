@@ -1,0 +1,132 @@
+:root {
+    --primary: #0f172a;
+    --secondary: #8B5CF6;
+    --tertiary: #2DD4BF;
+    --fourth: #0D1C2D;
+    --neutral1: rgba(186, 186, 186, 0.5);
+    --neutral2: #94A3B8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--fourth);
+    font-family: sans-serif;
+}
+
+.pendidikan {
+    background-color: var(--primary);
+    color: white;
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 1px solid var(--neutral1);
+    margin-top: 100px;
+    border-radius: 10px;
+}
+
+.header-pendidikan {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.subjudul {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: var(--tertiary);
+    display: inline-block;
+    border-bottom: 2px solid var(--secondary);
+    padding-bottom: 5px;
+}
+
+.content-pendidikan-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.garis-tengah {
+    position: absolute;
+    width: 4px;
+    background: linear-gradient(to bottom, var(--secondary), var(--tertiary));
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.card-pendidikan {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 70px;
+}
+
+.card-pendidikan .nama-sekolah {
+    font-size: 1.25rem;
+    color: var(--secondary);
+    background-color: var(--primary);
+    padding: 15px 20px 0px 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-bottom: 0;
+}
+
+.card-pendidikan .deskripsi-sekolah {
+    color: var(--neutral2);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    background-color: var(--primary);
+    padding: 8px 20px 15px 20px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom: 1px solid var(--neutral1);
+}
+
+.card-pendidikan.kiri {
+    left: 0;
+    text-align: right;
+    margin-right: 40px;
+    width: calc(50% - 40px);
+}
+
+.card-pendidikan.kanan {
+    left: 50%;
+    text-align: left;
+    margin-left: 40px;
+    width: calc(50% - 40px);
+}
+
+.logo-pendidikan {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    border: 3px solid var(--secondary);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.card-pendidikan.kiri .logo-pendidikan {
+    right: -63px;
+}
+
+.card-pendidikan.kanan .logo-pendidikan {
+    left: -63px;
+}
+
+.logo-pendidikan img {
+    width: 65%;
+    height: 65%;
+    object-fit: contain;
+}

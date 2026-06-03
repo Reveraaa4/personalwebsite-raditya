@@ -1,0 +1,83 @@
+@import url("navbar.css");
+@import url("hero-section.css");
+@import url("tools.css");
+@import url("projek.css");
+@import url("pendidikan.css");
+@import url("blog.css");
+@import url("footer.css");
+
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden; 
+}
+
+#bintang-all {
+    position: fixed;      
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 6; 
+    pointer-events: none; 
+    overflow: hidden;
+}
+
+.navbar-wrapper,
+.hero-section,
+.tentang-saya-image, 
+.tentang-saya-image img, 
+.alat-section,
+.pengalaman-section,
+.pengalaman-section-2,
+.social-links {
+    position: relative;
+    z-index: 10; 
+}
+
+.bintang {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%; 
+    animation: bintang var(--duration) ease-in-out infinite;
+    animation-delay: var(--delay);
+}
+
+@keyframes bintang {
+    0%, 100% {
+        opacity: 0.3;
+        transform: scale(1);
+    } 
+    50% {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+}
+
+.judul-text {
+    font-size: 20px;
+    color: var(--tertiary);
+    margin-bottom: 10px;
+}
+
+.subjudul {
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: var(--tertiary);
+    margin-bottom: 25px;
+}
+
+.scroll-animasi {
+    opacity: 0;
+    transform: translateY(50px); 
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+
+.scroll-animasi.muncul {
+    opacity: 1;
+    transform: translateY(0);
+}
