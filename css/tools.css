@@ -1,9 +1,10 @@
 :root {
-    --primary: #1A1A1A;
-    --secondary: #8C867E;
-    --tertiary: #1B1A19;
-    --background: #fdf8f8;
-    --neutral: #797676;
+    --background: #F8FAFC;
+    --primary: #0F172A;
+    --secondary: #334155;
+    --neutral: #64748B;
+    --accent: #2563EB;
+    --line-color: #E2E8F0;
 }
 
 * {
@@ -15,6 +16,7 @@
 .alat-section {
     margin-top: 100px;
     scroll-margin-top: 100px;
+    background-color: var(--background);
 }
 
 .header-alat {
@@ -22,10 +24,10 @@
 }
 
 .alat-section-container {
-    width: 100%;             
+    width: 100%;              
     max-width: 1200px;      
     margin: 50px auto 100px auto; 
-    background-color: var(--background);
+    background-color: #FFFFFF;
     color: var(--primary);
     padding: 40px;                
     display: grid;
@@ -34,8 +36,9 @@
     align-items: start;             
     position: relative;
     overflow: hidden;
-    border: 1px solid var(--secondary);
+    border: 1px solid var(--line-color);
     border-radius: 10px;
+    box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.05);
 }
 
 .kategori-wrapper {

@@ -6,7 +6,6 @@
     --neutral: #797676;
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -20,9 +19,8 @@
     right: 0;
     width: 100%;
     background-color: var(--background); 
-    border-bottom: 1px solid var(--neutral);
+    border-bottom: 1px solid var(--line-color, #DBDBDB);
 }
-
 
 .container {
     width: 100%;
@@ -42,9 +40,14 @@
 
 .nav-list li a {
     text-decoration: none;
-    color: var(--primary);
+    color: var(--neutral);
     font-weight: bold;
     font-size: 18px;
+    transition: color 0.2s ease;
+}
+
+.nav-list li a:hover {
+    color: var(--primary);
 }
 
 .logo {
@@ -61,8 +64,13 @@
 .contact-button {
     padding: 10px 20px;
     background-color: var(--primary);
-    color: white;
+    color: #FFFFFF;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.contact-button:hover {
+    background-color: var(--tertiary);
 }

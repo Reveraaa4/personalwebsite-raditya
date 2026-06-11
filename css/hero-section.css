@@ -27,14 +27,14 @@
 
 .name {
     color: var(--secondary);
-    border-right: 3px solid #fdfcfc; 
+    border-right: 3px solid var(--primary); 
     animation: kedipKursor 0.7s step-end infinite;
     padding-right: 5px;
 }
 
 @keyframes kedipKursor {
     from, to { border-color: transparent }
-    50% { border-color: #f8f7f7; } 
+    50% { border-color: var(--primary); } 
 }
 
 .hero-section {
@@ -45,24 +45,35 @@
 .hero-section h1 {
     font-size: 64px;
     margin-bottom: 20px;
+    color: var(--primary);
 }
 
 .hero-section p {
     padding-top: 10px;
     font-size: 18px;
     margin-bottom: 20px;
+    color: var(--neutral);
+}
+
+.hero-section .subjudul {
+    color: var(--primary);
 }
 
 .hero-button1 {
     padding: 10px 20px;
     margin-top: 20px;
     font-size: 16px;
-    color: black;
+    color: var(--background);
     font-weight: bold;
-    background-color: #B4C1DC;
+    background-color: var(--primary);
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.hero-button1:hover {
+    background-color: var(--tertiary);
 }
 
 .hero-button2 {
@@ -70,12 +81,18 @@
     margin-top: 20px;
     margin-left: 10px;
     font-size: 16px;
-    color: white;
+    color: var(--primary);
     font-weight: bold;
     background-color: transparent;
-    border: 2px solid white;
+    border: 2px solid var(--primary);
     border-radius: 5px;
     cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.hero-button2:hover {
+    background-color: var(--primary);
+    color: var(--background);
 }
 
 @keyframes muncul {
@@ -118,8 +135,8 @@
 }
 
 .media-social {
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--line-color, #DBDBDB);
+    background-color: #FFFFFF;
     border-radius: 12px;
     width: 40px;
     height: 40px;
@@ -127,12 +144,11 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: white;
     transition: all 0.3s ease;
 }
 
 .media-social:hover {
-    background-color: var(--secondary);
+    background-color: var(--background);
     border-color: var(--secondary);
     transform: translateY(-4px);
 }
