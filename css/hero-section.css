@@ -1,8 +1,9 @@
 :root {
-    --primary: #0f172a;
-    --secondary: #8B5CF6;
-    --tertiary: #2DD4BF;
-    --neutral: #94A3B8;
+    --primary: #1A1A1A;
+    --secondary: #8C867E;
+    --tertiary: #1B1A19;
+    --background: #fdf8f8;
+    --neutral: #797676;
 }
 
 * {
@@ -12,9 +13,9 @@
 }
 
 .hero-section-container {
-    background-color: var(--primary);
+    background-color: var(--background);
     height: 90vh;
-    color: white;
+    color: var(--primary);
     padding-top: 150px;
     padding-left: 15px;
     display: grid;
@@ -105,6 +106,7 @@
     animation-iteration-count: 1;
     position: relative;
     z-index: 99;
+    top: 50px;
 }
 
 .social-links {

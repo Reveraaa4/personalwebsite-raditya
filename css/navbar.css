@@ -1,8 +1,9 @@
 :root {
-    --primary: #0f172a;
-    --secondary: #8B5CF6;
-    --tertiary: #2DD4BF;
-    --neutral: #94A3B8;
+    --primary: #1A1A1A;
+    --secondary: #8C867E;
+    --tertiary: #1B1A19;
+    --background: #fdf8f8;
+    --neutral: #797676;
 }
 
 
@@ -18,7 +19,7 @@
     left: 0;
     right: 0;
     width: 100%;
-    background-color: var(--primary); 
+    background-color: var(--background); 
     border-bottom: 1px solid var(--neutral);
 }
 
@@ -36,12 +37,12 @@
 .nav-list {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 50px;
 }  
 
 .nav-list li a {
     text-decoration: none;
-    color: white;
+    color: var(--primary);
     font-weight: bold;
     font-size: 18px;
 }
@@ -54,12 +55,12 @@
 .logo-text {
     font-size: 30px;
     font-weight: bold;
-    color: white;
+    color: var(--primary);
 }
 
 .contact-button {
     padding: 10px 20px;
-    background-color: var(--secondary);
+    background-color: var(--primary);
     color: white;
     border: none;
     border-radius: 5px;

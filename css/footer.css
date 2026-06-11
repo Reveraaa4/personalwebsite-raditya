@@ -1,3 +1,12 @@
+:root {
+    --primary: #1A1A1A;
+    --secondary: #8C867E;
+    --tertiary: #1B1A19;
+    --background: #fdf8f8;
+    --neutral: #797676;
+}
+
+
 .main-footer {
     background-color: var(--primary);
     color: white;

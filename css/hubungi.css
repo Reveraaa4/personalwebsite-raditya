@@ -1,0 +1,145 @@
+:root {
+    --primary: #1A1A1A;
+    --secondary: #8C867E;
+    --tertiary: #1B1A19;
+    --background: #f8f8f8;
+    --base: #FFFFFF;
+    --neutral: #797676;
+    --line-color: #DBDBDB;
+}
+
+.hubungi {
+    padding: 80px 40px;
+    background-color: var(--background);
+    width: 100%;
+    max-width: 1200px;
+    margin: 100px auto 0 auto;
+    color: var(--primary);
+    box-sizing: border-box;
+    border: 1px solid var(--secondary);
+    border-radius: 10px;
+}
+
+.hubungi-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.content-hubungi {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content-hubungi .subjudul-hubungi {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2.8rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-bottom: 30px;
+    color: var(--primary);
+}
+
+.content-hubungi .deskripsi-hubungi {
+    font-size: 1.05rem;
+    color: var(--neutral);
+    line-height: 1.7;
+    max-width: 450px;
+}
+
+.footer-hubungi {
+    margin-top: 60px;
+}
+
+.footer-hubungi h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.sosmed-links {
+    display: flex;
+    gap: 20px;
+}
+
+.sosmed-links a {
+    font-size: 0.9rem;
+    color: var(--neutral);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.sosmed-links a:hover {
+    color: var(--primary);
+}
+
+.form-hubungi {
+    flex: 1;
+}
+
+.form-hubungi form {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-group label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: var(--primary);
+}
+
+.input-group input, 
+.input-group textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--line-color);
+    padding: 10px 0;
+    font-size: 1rem;
+    color: var(--primary);
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.input-group textarea {
+    resize: none;
+    height: 80px;
+}
+
+.input-group input:focus, 
+.input-group textarea:focus {
+    border-bottom: 1px solid var(--primary);
+}
+
+::placeholder {
+    color: #CCCCCC;
+    opacity: 1;
+}
+
+.btn-kirim {
+    background-color: var(--primary);
+    color: var(--base);
+    border: none;
+    padding: 15px 35px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background-color 0.2s ease;
+}
+
+.btn-kirim:hover {
+    background-color: var(--tertiary);
+}
+

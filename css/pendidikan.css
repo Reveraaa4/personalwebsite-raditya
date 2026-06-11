@@ -1,10 +1,9 @@
 :root {
-    --primary: #0f172a;
-    --secondary: #8B5CF6;
-    --tertiary: #2DD4BF;
-    --fourth: #0D1C2D;
-    --neutral1: rgba(186, 186, 186, 0.5);
-    --neutral2: #94A3B8;
+    --primary: #1A1A1A;
+    --secondary: #8C867E;
+    --tertiary: #1B1A19;
+    --background: #fdf8f8;
+    --neutral: #797676;
 }
 
 * {
