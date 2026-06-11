@@ -1,8 +1,6 @@
 @import url("navbar.css");
 @import url("hero-section.css");
 @import url("tools.css");
-@import url("projek.css");
-@import url("pendidikan.css");
 @import url("blog.css");
 @import url("footer.css");
 
@@ -14,6 +12,7 @@ body {
     overflow-x: hidden; 
 }
 
+/*
 #bintang-all {
     position: fixed;      
     top: 0;
@@ -24,6 +23,29 @@ body {
     pointer-events: none; 
     overflow: hidden;
 }
+
+
+
+.bintang {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%; 
+    animation: bintang var(--duration) ease-in-out infinite;
+    animation-delay: var(--delay);
+}
+
+
+@keyframes bintang {
+    0%, 100% {
+        opacity: 0.3;
+        transform: scale(1);
+    } 
+    50% {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+}
+*/
 
 .navbar-wrapper,
 .hero-section,
@@ -37,28 +59,8 @@ body {
     z-index: 10; 
 }
 
-.bintang {
-    position: absolute;
-    background-color: white;
-    border-radius: 50%; 
-    animation: bintang var(--duration) ease-in-out infinite;
-    animation-delay: var(--delay);
-}
-
-@keyframes bintang {
-    0%, 100% {
-        opacity: 0.3;
-        transform: scale(1);
-    } 
-    50% {
-        opacity: 1;
-        transform: scale(1.5);
-    }
-}
-
 .judul-text {
     font-size: 20px;
-    color: var(--tertiary);
     margin-bottom: 10px;
 }
 
@@ -66,7 +68,6 @@ body {
     font-size: 24px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    color: var(--tertiary);
     margin-bottom: 25px;
 }
 

@@ -20,13 +20,9 @@
     letter-spacing: 1px;
 }
 
-.footer-box h2 span {
-    color: var(--tertiary);
-}
 
 .footer-box h3 {
     font-size: 1.2rem;
-    color: var(--tertiary);
     margin-bottom: 20px;
     position: relative;
 }

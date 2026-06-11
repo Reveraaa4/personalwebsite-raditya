@@ -33,9 +33,7 @@ body {
 .subjudul {
     font-size: 2rem;
     letter-spacing: 2px;
-    color: var(--tertiary);
     display: inline-block;
-    border-bottom: 2px solid var(--secondary);
     padding-bottom: 5px;
 }
 
@@ -114,7 +112,7 @@ body {
     gap: 12px;          
     margin-top: 5px;     
 }
-
+git
 .author-blog p {
     color: var(--neutral2);
     font-size: 0.95rem;
