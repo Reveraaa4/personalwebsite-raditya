@@ -14,10 +14,11 @@
 
 .hero-section-container {
     background-color: var(--background);
-    height: 90vh;
+    height: 95vh;
     color: var(--primary);
-    padding-top: 150px;
-    padding-left: 15px;
+    padding-top: 180px;
+    padding-left: 40px;
+    padding-right: 40px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     position: relative; 
@@ -29,7 +30,7 @@
     color: var(--secondary);
     border-right: 3px solid var(--primary); 
     animation: kedipKursor 0.7s step-end infinite;
-    padding-right: 5px;
+    padding-right: 8px;
 }
 
 @keyframes kedipKursor {
@@ -43,15 +44,17 @@
 }
 
 .hero-section h1 {
-    font-size: 64px;
-    margin-bottom: 20px;
-    color: var(--primary);
+    font-size: 56px;
+    line-height: 1.2;
+    margin-bottom: 24px;
+    letter-spacing: -1px;
 }
 
 .hero-section p {
-    padding-top: 10px;
+    padding-top: 0px; 
     font-size: 18px;
-    margin-bottom: 20px;
+    line-height: 1.7;
+    margin-bottom: 32px;
     color: var(--neutral);
 }
 
@@ -59,17 +62,25 @@
     color: var(--primary);
 }
 
+.hero-buttons-wrapper {
+    display: flex;
+    gap: 16px;
+    margin-top: 32px;
+    margin-bottom: 48px;
+}
+
 .hero-button1 {
-    padding: 10px 20px;
-    margin-top: 20px;
-    font-size: 16px;
+    padding: 12px 24px;
+    font-size: 15px;
     color: var(--background);
     font-weight: bold;
     background-color: var(--primary);
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
+    letter-spacing: 0.5px;
     transition: background-color 0.2s ease;
+    margin-top: 20px;
 }
 
 .hero-button1:hover {
@@ -77,16 +88,15 @@
 }
 
 .hero-button2 {
-    padding: 10px 20px;
-    margin-top: 20px;
-    margin-left: 10px;
-    font-size: 16px;
+    padding: 12px 24px;
+    font-size: 15px;
     color: var(--primary);
     font-weight: bold;
     background-color: transparent;
     border: 2px solid var(--primary);
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
+    letter-spacing: 0.5px;
     transition: all 0.2s ease;
 }
 
@@ -123,23 +133,22 @@
     animation-iteration-count: 1;
     position: relative;
     z-index: 99;
-    top: 50px;
+    top: 30px;
 }
 
 .social-links {
     display: flex;
-    gap: 15px;
+    gap: 16px;
     align-items: center;
     width: 100%;
-    margin-top: 40px;
 }
 
 .media-social {
     border: 1px solid var(--line-color, #DBDBDB);
     background-color: #FFFFFF;
     border-radius: 12px;
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,7 +163,7 @@
 }
 
 .media-social img {
-    width: 28px;
-    height: 28px;
+    width: 24px;
+    height: 24px;
     object-fit: contain;
 }

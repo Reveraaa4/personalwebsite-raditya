@@ -14,30 +14,31 @@
 }
 
 .alat-section {
-    margin-top: 100px;
+    margin-top: 140px;
     scroll-margin-top: 100px;
     background-color: var(--background);
 }
 
 .header-alat {
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .alat-section-container {
     width: 100%;              
     max-width: 1200px;      
-    margin: 50px auto 100px auto; 
+    margin: 40px auto 120px auto; 
     background-color: #FFFFFF;
     color: var(--primary);
-    padding: 40px;                
+    padding: 48px;                
     display: grid;
     grid-template-columns: 1fr 1fr; 
-    gap: 60px;                      
+    gap: 80px;                      
     align-items: start;             
     position: relative;
     overflow: hidden;
     border: 1px solid var(--line-color);
-    border-radius: 10px;
+    border-radius: 12px;
     box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.05);
 }
 
@@ -47,11 +48,12 @@
 }
 
 .subjudul-tools {
-    font-size: 24px;
+    font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     color: var(--primary);
-    margin-bottom: 20px; 
+    margin-bottom: 28px;
+    letter-spacing: 1px;
 }
 
 .subjudul {
@@ -65,12 +67,12 @@
 .group-logo {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
-    gap: 25px;          
+    gap: 32px;          
     align-items: center;
 }
 
 .group-logo img {
-    width: 50px;
-    height: 50px;       
+    width: 48px;
+    height: 48px;       
     object-fit: contain;
 }

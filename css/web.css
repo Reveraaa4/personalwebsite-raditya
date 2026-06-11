@@ -13,6 +13,7 @@ body {
     overflow-x: hidden; 
     background-color: var(--background);
     color: var(--primary);
+    line-height: 1.6;
 }
 
 /*
@@ -61,16 +62,18 @@ body {
 }
 
 .judul-text {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: var(--primary);
+    font-size: 22px;
+    margin-bottom: 16px;
+    letter-spacing: 0.5px;
 }
 
 .subjudul {
-    font-size: 24px;
+    font-size: 14px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
     color: var(--secondary);
 }
 
