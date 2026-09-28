@@ -1,9 +1,12 @@
 :root {
-    --primary: #1A1A1A;
-    --secondary: #8C867E;
-    --tertiary: #1B1A19;
-    --background: #fdf8f8;
-    --neutral: #797676;
+    --background: #F8FAFC;
+    --base: #FFFFFF;
+    --primary: #0F172A;
+    --secondary: #64748B;
+    --neutral: #475569;
+    --tertiary: #1E293B;
+    --line-color: #E2E8F0;
+    --accent: #0D9488;
 }
 
 

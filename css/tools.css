@@ -1,10 +1,12 @@
 :root {
     --background: #F8FAFC;
+    --base: #FFFFFF;
     --primary: #0F172A;
-    --secondary: #334155;
-    --neutral: #64748B;
-    --accent: #2563EB;
+    --secondary: #64748B;
+    --neutral: #475569;
+    --tertiary: #1E293B;
     --line-color: #E2E8F0;
+    --accent: #0D9488;
 }
 
 * {
@@ -14,32 +16,33 @@
 }
 
 .alat-section {
-    margin-top: 140px;
-    scroll-margin-top: 100px;
+    margin-top: 180px;
+    margin-bottom: 180px;
+    scroll-margin-top: 120px;
     background-color: var(--background);
 }
 
 .header-alat {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 64px;
 }
 
 .alat-section-container {
     width: 100%;              
     max-width: 1200px;      
-    margin: 40px auto 120px auto; 
+    margin: 0 auto; 
     background-color: #FFFFFF;
     color: var(--primary);
-    padding: 48px;                
+    padding: 64px;                
     display: grid;
     grid-template-columns: 1fr 1fr; 
-    gap: 80px;                      
+    gap: 100px;                      
     align-items: start;             
     position: relative;
     overflow: hidden;
-    border: 1px solid var(--line-color);
-    border-radius: 12px;
-    box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.05);
+    border: 1px solid var(--line-color, #DBDBDB);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05);
 }
 
 .kategori-wrapper {
@@ -52,7 +55,7 @@
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     color: var(--primary);
-    margin-bottom: 28px;
+    margin-bottom: 40px;
     letter-spacing: 1px;
 }
 
@@ -67,7 +70,7 @@
 .group-logo {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
-    gap: 32px;          
+    gap: 40px;          
     align-items: center;
 }
 

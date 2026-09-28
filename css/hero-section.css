@@ -1,9 +1,12 @@
 :root {
-    --primary: #1A1A1A;
-    --secondary: #8C867E;
-    --tertiary: #1B1A19;
-    --background: #fdf8f8;
-    --neutral: #797676;
+    --background: #F8FAFC;
+    --base: #FFFFFF;
+    --primary: #0F172A;
+    --secondary: #64748B;
+    --neutral: #475569;
+    --tertiary: #1E293B;
+    --line-color: #E2E8F0;
+    --accent: #0D9488;
 }
 
 * {
@@ -119,7 +122,13 @@
 .tentang-saya-image {
     max-width: 100%;
     height: auto;
-    object-fit: cover;
+    
+    /* --- KODE TAMBAHAN UNTUK MEMBUAT BULAT --- */
+    border-radius: 50%; 
+    aspect-ratio: 1 / 1; 
+    /* ----------------------------------------- */
+    
+    object-fit: cover; /* Memastikan foto tidak gepeng/distorsi */
     margin-top: 7px;
     align-items: center;
     justify-self: center;

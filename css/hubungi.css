@@ -1,29 +1,37 @@
 :root {
-    --primary: #1A1A1A;
-    --secondary: #8C867E;
-    --tertiary: #1B1A19;
-    --background: #f8f8f8;
+    --background: #F8FAFC;
     --base: #FFFFFF;
-    --neutral: #797676;
-    --line-color: #DBDBDB;
+    --primary: #0F172A;
+    --secondary: #64748B;
+    --neutral: #475569;
+    --tertiary: #1E293B;
+    --line-color: #E2E8F0;
+    --accent: #0D9488;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .hubungi {
-    padding: 80px 40px;
+    padding: 80px 64px;
     background-color: var(--background);
     width: 100%;
     max-width: 1200px;
-    margin: 100px auto 0 auto;
+    margin: 180px auto 180px auto;
     color: var(--primary);
     box-sizing: border-box;
-    border: 1px solid var(--secondary);
-    border-radius: 10px;
+    border: 1px solid var(--line-color);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05);
 }
 
 .hubungi-container {
     display: flex;
     justify-content: space-between;
-    gap: 80px;
+    gap: 100px;
 }
 
 .content-hubungi {
@@ -38,31 +46,31 @@
     font-size: 2.8rem;
     font-weight: 400;
     line-height: 1.25;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
     color: var(--primary);
 }
 
 .content-hubungi .deskripsi-hubungi {
     font-size: 1.05rem;
     color: var(--neutral);
-    line-height: 1.7;
+    line-height: 1.8;
     max-width: 450px;
 }
 
 .footer-hubungi {
-    margin-top: 60px;
+    margin-top: 80px;
 }
 
 .footer-hubungi h3 {
     font-family: 'Playfair Display', Georgia, serif;
     font-size: 1.6rem;
     font-weight: 400;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .sosmed-links {
     display: flex;
-    gap: 20px;
+    gap: 24px;
 }
 
 .sosmed-links a {
@@ -83,13 +91,13 @@
 .form-hubungi form {
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    gap: 40px;
 }
 
 .input-group {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 12px;
 }
 
 .input-group label {
@@ -104,7 +112,7 @@
     background-color: transparent;
     border: none;
     border-bottom: 1px solid var(--line-color);
-    padding: 10px 0;
+    padding: 12px 0;
     font-size: 1rem;
     color: var(--primary);
     outline: none;
@@ -113,7 +121,7 @@
 
 .input-group textarea {
     resize: none;
-    height: 80px;
+    height: 100px;
 }
 
 .input-group input:focus, 
@@ -130,16 +138,17 @@
     background-color: var(--primary);
     color: var(--base);
     border: none;
-    padding: 15px 35px;
+    padding: 16px 40px;
     font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 1.5px;
     cursor: pointer;
     align-self: flex-start;
+    border-radius: 6px;
+    margin-top: 12px;
     transition: background-color 0.2s ease;
 }
 
 .btn-kirim:hover {
     background-color: var(--tertiary);
 }
-
